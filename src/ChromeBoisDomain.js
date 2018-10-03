@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { drawChromeBoiAtCoords, toggleCycling, resize } from './canvasHelpers.js'
-
+import { drawChromeBoiAtCoords, toggleCycling, resize } from './canvasHelpers.js';
 
 export default class ChromeBoisDomain extends Component {
   
@@ -10,11 +9,12 @@ export default class ChromeBoisDomain extends Component {
      * function that has been provided and is already imported
      * (`drawChromeBoiAtCoords` expects two arguments, an x and a y coordinate)
      */
-  }
-  let x = event.clientX;
-  let y = event.clientY;
+     let x = event.clientX;
+    let y = event.clientY;
   
-  drawChromeBoiAtCoords(x, y);
+    drawChromeBoiAtCoords(x, y);
+  }
+  
   /* TODO: Create an event handler which, when fired, invokes the provided
    * `toggleCycling` function with no arguments. Don't forget the click event
    * listener that should fire it!
